@@ -28,12 +28,12 @@ namespace Facebook
         private IWebElement drpYear = GlobalDefenitions.driver.FindElement(By.Id("year"));
         private IWebElement rbSexFemale = GlobalDefenitions.driver.FindElement(By.XPath("//input[@name='sex' and @value='1']"));
         private IWebElement rbSexMale = GlobalDefenitions.driver.FindElement(By.XPath("//input[@name='sex' and @value='2']"));
-        private IWebElement btnSignUp = GlobalDefenitions.driver.FindElement(By.Name("websubmit"));
+        private IWebElement btnSignUp = GlobalDefenitions.driver.FindElement(By.Id("u_0_1b"));
 
         public void SignUp(string firstName, string surName, string emailOrMobile, string newPassword,string dateofbirth,string sex)
         {
             //enter Firstname,Surname,email or mobile,password
-            Thread.Sleep(5);
+            Thread.Sleep(10);
             txtFirstName.SendKeys(firstName);
             txtSurName.SendKeys(surName);
             txtEmailOrMobile.SendKeys(emailOrMobile);
