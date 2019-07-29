@@ -33,6 +33,7 @@ namespace Facebook
         public void SignUp(string firstName, string surName, string emailOrMobile, string newPassword,string dateofbirth,string sex)
         {
             //enter Firstname,Surname,email or mobile,password
+            Thread.Sleep(5);
             txtFirstName.SendKeys(firstName);
             txtSurName.SendKeys(surName);
             txtEmailOrMobile.SendKeys(emailOrMobile);
