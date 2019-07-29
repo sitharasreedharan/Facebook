@@ -17,5 +17,13 @@ namespace Facebook.Test
             oSignUp.SignUp("Sit","Thara","tiuyiyiyyiuyu@gmail.com","Rr12345!","1-Jun-1986","female");
             
         }
+
+        [Test]
+        public void InValidUserSignUp()
+        {
+            UserSignUp oSignUp = new UserSignUp();
+            oSignUp.SignUp("Sit", "Thara", "tiuyiyiyyiuyu@gmail.com", "Rr12345!", "1-Jun-1986", "female");
+
+        }
     }
 }

@@ -18,21 +18,22 @@ namespace Facebook
     class UserSignUp {
 
         //WebElements
-        private IWebElement txtFirstName = GlobalDefenitions.driver.FindElement(By.Id("u_0_j"));
-        private IWebElement txtSurName = GlobalDefenitions.driver.FindElement(By.Id("u_0_l"));
-        private IWebElement txtEmailOrMobile = GlobalDefenitions.driver.FindElement(By.Id("u_0_o"));
+        private IWebElement txtFirstName = GlobalDefenitions.driver.FindElement(By.Id("u_0_r"));
+        private IWebElement txtSurName = GlobalDefenitions.driver.FindElement(By.Id("u_0_t"));
+        private IWebElement txtEmailOrMobile = GlobalDefenitions.driver.FindElement(By.Id("u_0_w"));
         private IWebElement txtReenterEmail = GlobalDefenitions.driver.FindElement(By.Id("u_0_r"));
-        private IWebElement txtNewPassword = GlobalDefenitions.driver.FindElement(By.Id("u_0_v"));
+        private IWebElement txtNewPassword = GlobalDefenitions.driver.FindElement(By.Id("u_0_13"));
         private IWebElement drpDay = GlobalDefenitions.driver.FindElement(By.Id("day"));
         private IWebElement drpMonth = GlobalDefenitions.driver.FindElement(By.Id("month"));
         private IWebElement drpYear = GlobalDefenitions.driver.FindElement(By.Id("year"));
         private IWebElement rbSexFemale = GlobalDefenitions.driver.FindElement(By.XPath("//input[@name='sex' and @value='1']"));
         private IWebElement rbSexMale = GlobalDefenitions.driver.FindElement(By.XPath("//input[@name='sex' and @value='2']"));
-        private IWebElement btnSignUp = GlobalDefenitions.driver.FindElement(By.Name("websubmit"));
+        private IWebElement btnSignUp = GlobalDefenitions.driver.FindElement(By.Id("u_0_1b"));
 
         public void SignUp(string firstName, string surName, string emailOrMobile, string newPassword,string dateofbirth,string sex)
         {
             //enter Firstname,Surname,email or mobile,password
+            Thread.Sleep(7);
             txtFirstName.SendKeys(firstName);
             txtSurName.SendKeys(surName);
             txtEmailOrMobile.SendKeys(emailOrMobile);
