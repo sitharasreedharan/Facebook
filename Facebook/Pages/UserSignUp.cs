@@ -18,11 +18,11 @@ namespace Facebook
     class UserSignUp {
 
         //WebElements
-        private IWebElement txtFirstName = GlobalDefenitions.driver.FindElement(By.Id("u_0_j"));
-        private IWebElement txtSurName = GlobalDefenitions.driver.FindElement(By.Id("u_0_l"));
-        private IWebElement txtEmailOrMobile = GlobalDefenitions.driver.FindElement(By.Id("u_0_o"));
+        private IWebElement txtFirstName = GlobalDefenitions.driver.FindElement(By.Id("u_0_r"));
+        private IWebElement txtSurName = GlobalDefenitions.driver.FindElement(By.Id("u_0_t"));
+        private IWebElement txtEmailOrMobile = GlobalDefenitions.driver.FindElement(By.Id("u_0_w"));
         private IWebElement txtReenterEmail = GlobalDefenitions.driver.FindElement(By.Id("u_0_r"));
-        private IWebElement txtNewPassword = GlobalDefenitions.driver.FindElement(By.Id("u_0_v"));
+        private IWebElement txtNewPassword = GlobalDefenitions.driver.FindElement(By.Id("u_0_13"));
         private IWebElement drpDay = GlobalDefenitions.driver.FindElement(By.Id("day"));
         private IWebElement drpMonth = GlobalDefenitions.driver.FindElement(By.Id("month"));
         private IWebElement drpYear = GlobalDefenitions.driver.FindElement(By.Id("year"));
