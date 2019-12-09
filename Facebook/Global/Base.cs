@@ -18,8 +18,8 @@ namespace Facebook
         [SetUp]
         public void Inititalize()
         {
-            GlobalDefenitions.driver = new ChromeDriver();
-            GlobalDefenitions.driver.Navigate().GoToUrl(@"https://www.facebook.com");
+            GlobalDefenitions.driver = new FirefoxDriver();
+            GlobalDefenitions.driver.Navigate().GoToUrl(@"https://www.facebook.com/signup");
             GlobalDefenitions.driver.Manage().Window.Maximize();
             Thread.Sleep(1000);           
         }
